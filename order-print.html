@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRM - ScopeLinks</title> 
+  <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+  <meta content="Coderthemes" name="author" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- App favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.png">
+  <!-- Import Font Google -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+  <!-- Import Style File -->
+  <link rel="stylesheet" href="./assets/css/app.min.css"> 
+ 
+</head>
+
+<body class="default-page"> 
+  <div class="wrapper">
+
+    <!-- Start Preloader -->
+    <div id="sl-preloader-page" class="sl-preloader-page">
+      <div class="sl-preloader-wrap">
+        <div class="sl-circle">
+          <div class="sl-circle1 sl-child"></div>
+          <div class="sl-circle2 sl-child"></div>
+          <div class="sl-circle3 sl-child"></div>
+          <div class="sl-circle4 sl-child"></div>
+          <div class="sl-circle5 sl-child"></div>
+          <div class="sl-circle6 sl-child"></div>
+          <div class="sl-circle7 sl-child"></div>
+          <div class="sl-circle8 sl-child"></div>
+          <div class="sl-circle9 sl-child"></div>
+          <div class="sl-circle10 sl-child"></div>
+          <div class="sl-circle11 sl-child"></div>
+          <div class="sl-circle12 sl-child"></div>
+        </div>
+        <div class="sl-preloader-title">Loading ...</div>
+      </div>
+    </div>
+    <!-- End Preloader -->
+
+<!-- Start Main Content -->
+<main id="main-content" class="main-content order-print-page">
+  <div class="content-wapper">
+    <!-- Start Content -->
+    <div class="content" style="max-width: 992px; margin:0 auto;">
+      <div class="card-box">
+        <div class="content">
+          <div class="print-table-wrapper">
+            <div class="print-head d-flex justify-content-between align-items-center mb-2">
+              <div class="head_logo">
+                <img src="./assets/images/logo.svg" width="90" />
+              </div>
+              <div class="head_barcode">
+                <img 
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAABGAQMAAADFFvv+AAAABlBMVEX///8BAQE6HLieAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAKxJREFUSIlj+Mx/2IaZn5/fxsDg8+HDh8/z29jYfPhwmPnwgTP8zJ9tGEblR+VH5UflR+VH5UflMeWpBeTn2VQkPj7ez2NT8fHxgQMY8oyb0848Nsu5OSft7GyzREx5ZuO0s8lA+TUg+WQs8uZ5PMllb2/35N3dXfYMU57NuswieXve3R6gmu05WOSN0xJA5veAzM/HlOcxTjsAl0/AIi9n8/cn0H/2OPxHJgAAI61fNdaG+UAAAAAASUVORK5CYII=">
+              </div>
+              <div class="head_qrcode">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="80" height="80" viewBox="0 0 80 80">
+                <rect x="0" y="0" width="80" height="80" fill="#ffffff"></rect>
+                <g transform="scale(2.759)">
+                  <g transform="translate(0,0)">
+                    <path fill-rule="evenodd"
+                      d="M9 0L9 1L8 1L8 2L9 2L9 3L8 3L8 4L10 4L10 7L11 7L11 4L12 4L12 5L13 5L13 6L12 6L12 9L13 9L13 10L11 10L11 11L10 11L10 9L11 9L11 8L6 8L6 9L8 9L8 10L9 10L9 11L8 11L8 12L5 12L5 10L3 10L3 11L4 11L4 12L3 12L3 14L2 14L2 15L3 15L3 14L4 14L4 15L7 15L7 14L8 14L8 15L9 15L9 13L10 13L10 15L11 15L11 13L12 13L12 14L14 14L14 15L15 15L15 16L13 16L13 15L12 15L12 17L13 17L13 18L11 18L11 17L10 17L10 16L9 16L9 17L8 17L8 16L6 16L6 17L7 17L7 18L4 18L4 19L3 19L3 20L5 20L5 21L8 21L8 23L9 23L9 24L8 24L8 29L9 29L9 26L11 26L11 28L10 28L10 29L13 29L13 28L12 28L12 27L13 27L13 26L11 26L11 25L9 25L9 24L11 24L11 22L10 22L10 23L9 23L9 21L8 21L8 19L9 19L9 18L10 18L10 19L11 19L11 20L10 20L10 21L12 21L12 22L13 22L13 23L12 23L12 25L14 25L14 27L15 27L15 29L18 29L18 28L17 28L17 27L16 27L16 26L15 26L15 25L14 25L14 24L15 24L15 23L16 23L16 24L17 24L17 25L18 25L18 26L19 26L19 27L20 27L20 28L19 28L19 29L20 29L20 28L21 28L21 29L25 29L25 28L26 28L26 29L27 29L27 28L28 28L28 26L29 26L29 23L28 23L28 24L26 24L26 23L27 23L27 22L29 22L29 20L28 20L28 19L27 19L27 16L28 16L28 15L27 15L27 12L28 12L28 11L27 11L27 12L25 12L25 11L23 11L23 13L22 13L22 14L21 14L21 15L19 15L19 14L20 14L20 13L21 13L21 12L20 12L20 13L19 13L19 14L18 14L18 12L15 12L15 11L16 11L16 10L17 10L17 11L18 11L18 10L20 10L20 11L21 11L21 10L25 10L25 9L26 9L26 8L25 8L25 9L24 9L24 8L23 8L23 9L22 9L22 8L21 8L21 6L20 6L20 7L19 7L19 5L21 5L21 3L20 3L20 2L21 2L21 0L16 0L16 1L15 1L15 0L13 0L13 1L11 1L11 2L10 2L10 0ZM13 1L13 2L12 2L12 4L13 4L13 5L14 5L14 6L13 6L13 8L16 8L16 6L15 6L15 5L16 5L16 4L17 4L17 5L18 5L18 4L20 4L20 3L18 3L18 2L20 2L20 1L17 1L17 2L16 2L16 4L13 4L13 3L14 3L14 2L15 2L15 1ZM10 3L10 4L11 4L11 3ZM17 3L17 4L18 4L18 3ZM8 5L8 7L9 7L9 5ZM14 6L14 7L15 7L15 6ZM17 6L17 8L18 8L18 9L19 9L19 8L18 8L18 6ZM0 8L0 10L2 10L2 9L5 9L5 8ZM20 8L20 10L21 10L21 8ZM27 8L27 9L28 9L28 10L29 10L29 9L28 9L28 8ZM14 9L14 10L13 10L13 11L12 11L12 13L13 13L13 12L14 12L14 11L15 11L15 10L16 10L16 9ZM6 10L6 11L7 11L7 10ZM0 11L0 13L1 13L1 12L2 12L2 11ZM10 12L10 13L11 13L11 12ZM24 12L24 13L25 13L25 15L23 15L23 14L22 14L22 15L23 15L23 16L21 16L21 18L22 18L22 17L26 17L26 16L27 16L27 15L26 15L26 13L25 13L25 12ZM4 13L4 14L5 14L5 13ZM6 13L6 14L7 14L7 13ZM14 13L14 14L16 14L16 13ZM28 13L28 14L29 14L29 13ZM17 14L17 15L16 15L16 16L15 16L15 17L14 17L14 18L13 18L13 19L12 19L12 21L13 21L13 20L14 20L14 22L16 22L16 21L17 21L17 20L18 20L18 21L19 21L19 22L18 22L18 23L17 23L17 24L18 24L18 25L19 25L19 26L20 26L20 27L21 27L21 28L22 28L22 27L21 27L21 25L20 25L20 24L18 24L18 23L19 23L19 22L20 22L20 18L18 18L18 19L16 19L16 21L15 21L15 19L14 19L14 18L16 18L16 17L17 17L17 16L18 16L18 14ZM1 16L1 17L0 17L0 21L1 21L1 18L2 18L2 17L5 17L5 16ZM19 16L19 17L20 17L20 16ZM28 17L28 18L29 18L29 17ZM7 18L7 19L6 19L6 20L7 20L7 19L8 19L8 18ZM23 18L23 19L21 19L21 20L23 20L23 19L24 19L24 20L25 20L25 21L26 21L26 20L27 20L27 19L24 19L24 18ZM18 19L18 20L19 20L19 19ZM21 21L21 24L24 24L24 21ZM22 22L22 23L23 23L23 22ZM13 23L13 24L14 24L14 23ZM25 24L25 25L22 25L22 26L25 26L25 27L26 27L26 28L27 28L27 25L26 25L26 24ZM25 25L25 26L26 26L26 25ZM0 0L0 7L7 7L7 0ZM1 1L1 6L6 6L6 1ZM2 2L2 5L5 5L5 2ZM22 0L22 7L29 7L29 0ZM23 1L23 6L28 6L28 1ZM24 2L24 5L27 5L27 2ZM0 22L0 29L7 29L7 22ZM1 23L1 28L6 28L6 23ZM2 24L2 27L5 27L5 24Z"
+                      fill="#000000"></path>
+                  </g>
+                </g>
+              </svg>
+              </div>
+            </div>
+            <div class="print-wrapper">
+              <div class="row">
+                <div class="col-4">
+                  <div class="print-sidebar">
+                    <div class="cod">
+                      <div class="cod-lable">cod</div>
+                      <div class="cod-value">400</div>
+                    </div>
+                    <div class="items">
+                      <div class="table-print">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td class="title">Items</td>
+                              <td>1</td>
+                            </tr>
+                            <tr>
+                              <td class="title">Allow open shipment</td>
+                              <td>Yes</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <div class="table-print">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td class="title">Description of the shipment</td>
+                            </tr>
+                            <tr>
+                              <td>Car cover</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="print-body">
+                    <div class="print-body-head">
+                      Deliver
+                    </div>
+                    <div class="table-print">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td class="title">From</td>
+                            <td>Soqna (xline) </td>
+                          </tr>
+                          <tr>
+                            <td class="title">To</td>
+                            <td>Ahmed Ali Ahmed</td>
+                          </tr>
+                          <tr>
+                            <td class="title">Phone</td>
+                            <td>010123456789</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-print">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td colspan="1" class="title">Ctiy</td>
+                            <td colspan="1">Cairo </td>
+                            <td colspan="2" class="empty">-</td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" class="title">Area</td>
+                            <td colspan="3">Ahmed Ali Ahmed</td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" class="title">Street</td>
+                            <td colspan="3">44 Elmessaha Street Dokki, Giza.</td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" class="title">Special Marque</td>
+                            <td colspan="3" class="empty">-</td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" class="title">Role</td>
+                            <td colspan="1"> 5 </td>
+                            <td colspan="1" class="title">Flat</td>
+                            <td colspan="1">25 </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-print">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td class="title">Notes</td>
+                          </tr>
+                          <tr>
+                            <td>Car cover</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-print">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td class="title">Order RER</td>
+                            <td>-</td>
+                            <td class="title">Create At</td>
+                            <td>23 Jan , 2021</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Content -->
+    </div>
+    <!-- End Content -->
+  </div>
+</main>
+<!-- End Main Content -->
+
+<div class="sl-quicklinks-float-menu">
+  <div class="dropup">
+    <button class="dropdown-toggle" type="button" id="dropdownMenuquicklinks-float" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">
+      <i class="fas fa-th-large"></i>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuquicklinks-float">
+      <div class="dropdown-menu__container">
+        <a href="javascript:void(0);" class="dropdown-item">
+          <i class="far fa-user"></i>
+          <span>My Account</span>
+        </a>
+        <a href="javascript:void(0);" class="dropdown-item">
+          <i class="far fa-user"></i>
+          <span>My Account</span>
+        </a>
+        <a href="javascript:void(0);" class="dropdown-item">
+          <i class="far fa-user"></i>
+          <span>My Account</span>
+        </a>
+        <a href="javascript:void(0);" class="dropdown-item">
+          <i class="far fa-user"></i>
+          <span>My Account</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="chat-box-float" class="chat-box-float">
+  <button id="chat-box-icon" class="chat-box-icon">
+    <i class="far fa-comments"></i>
+  </button>
+  <div id="chat-box" class="chat-box">
+    <div class="chat-box-wrap">
+      <div class="chat-users">
+        <div class="chat-box-header">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="chat-tab" data-toggle="tab" href="#chat"><i
+                  class="far fa-comments"></i>Chat</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="users-tab" data-toggle="tab" href="#users"><i class="far fa-user"></i>Users</a>
+            </li>
+          </ul>
+  
+        </div>
+        <div class="chat-box-body">
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="chat" role="tabpanel" aria-labelledby="chat-tab">
+              <div class="chat-list">
+                <ul class="sl-scrollbar">
+                  <li class="chat-message-item">
+                    <div class="chat-message-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="message-info">
+                        <div class="message-info-user">
+                          <strong>Ahmed Ali</strong>
+                          <span class="message-date">Today at 12:32:13 pm</span>
+                        </div>
+                        <div class="message-content">
+                          Hello World !
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-message-item">
+                    <div class="chat-message-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="message-info">
+                        <div class="message-info-user">
+                          <strong>Ahmed Ali</strong>
+                          <span class="message-date">Today at 12:32:13 pm</span>
+                        </div>
+                        <div class="message-content">
+                          Hello World !
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-message-item">
+                    <div class="chat-message-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="message-info">
+                        <div class="message-info-user">
+                          <strong>Ahmed Ali</strong>
+                          <span class="message-date">Today at 12:32:13 pm</span>
+                        </div>
+                        <div class="message-content">
+                          Hello World !
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-message-item">
+                    <div class="chat-message-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="message-info">
+                        <div class="message-info-user">
+                          <strong>Ahmed Ali</strong>
+                          <span class="message-date">Today at 12:32:13 pm</span>
+                        </div>
+                        <div class="message-content">
+                          Hello World !
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-message-item">
+                    <div class="chat-message-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="message-info">
+                        <div class="message-info-user">
+                          <strong>Ahmed Ali</strong>
+                          <span class="message-date">Today at 12:32:13 pm</span>
+                        </div>
+                        <div class="message-content">
+                          Hello World !
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-message-item">
+                    <div class="chat-message-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="message-info">
+                        <div class="message-info-user">
+                          <strong>Ahmed Ali</strong>
+                          <span class="message-date">Today at 12:32:13 pm</span>
+                        </div>
+                        <div class="message-content">
+                          Hello World !
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-message-item">
+                    <div class="chat-message-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="message-info">
+                        <div class="message-info-user">
+                          <strong>Ahmed Ali</strong>
+                          <span class="message-date">Today at 12:32:13 pm</span>
+                        </div>
+                        <div class="message-content">
+                          Hello World !
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-message-item">
+                    <div class="chat-message-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="message-info">
+                        <div class="message-info-user">
+                          <strong>Ahmed Ali</strong>
+                          <span class="message-date">Today at 12:32:13 pm</span>
+                        </div>
+                        <div class="message-content">
+                          Hello World !
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="users" role="tabpanel" aria-labelledby="users-tab">
+              <div class="chat-list">
+                <ul class="sl-scrollbar">
+                  <li class="chat-user-item">
+                    <div class="chat-user-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="user-info">
+                        <div class="user-info-name">
+                          <strong>Ahmed Ali</strong>
+                        </div>
+                        <div class="user-info-position">
+                          <small>Front End Developer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-user-item">
+                    <div class="chat-user-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar"> <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="user-info">
+                        <div class="user-info-name">
+                          <strong>Ahmed Ali</strong>
+                        </div>
+                        <div class="user-info-position">
+                          <small>Front End Developer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-user-item">
+                    <div class="chat-user-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="user-info">
+                        <div class="user-info-name">
+                          <strong>Ahmed Ali</strong>
+                        </div>
+                        <div class="user-info-position">
+                          <small>Front End Developer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-user-item">
+                    <div class="chat-user-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="user-info">
+                        <div class="user-info-name">
+                          <strong>Ahmed Ali</strong>
+                        </div>
+                        <div class="user-info-position">
+                          <small>Front End Developer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-user-item">
+                    <div class="chat-user-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="user-info">
+                        <div class="user-info-name">
+                          <strong>Ahmed Ali</strong>
+                        </div>
+                        <div class="user-info-position">
+                          <small>Front End Developer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-user-item">
+                    <div class="chat-user-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="user-info">
+                        <div class="user-info-name">
+                          <strong>Ahmed Ali</strong>
+                        </div>
+                        <div class="user-info-position">
+                          <small>Front End Developer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-user-item">
+                    <div class="chat-user-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="user-info">
+                        <div class="user-info-name">
+                          <strong>Ahmed Ali</strong>
+                        </div>
+                        <div class="user-info-position">
+                          <small>Front End Developer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-user-item">
+                    <div class="chat-user-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="user-info">
+                        <div class="user-info-name">
+                          <strong>Ahmed Ali</strong>
+                        </div>
+                        <div class="user-info-position">
+                          <small>Front End Developer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-user-item">
+                    <div class="chat-user-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="user-info">
+                        <div class="user-info-name">
+                          <strong>Ahmed Ali</strong>
+                        </div>
+                        <div class="user-info-position">
+                          <small>Front End Developer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chat-content">
+        <div class="chat-header">
+          <button id="back-to-chat-tabs" class="back-to-chat-tabs"><i class="far fa-angle-left"></i></button>
+          <div class="chat-title">Samer Mostafa</div>
+        </div>
+        <div class="chat-body sl-scrollbar">
+          <div class="chat-subject">Subject: Hello World!</div>
+          <div class="chat-messages">
+            <div class="chat-item chat-me">
+              <div class="chat-message">
+                <p>Hello World !</p>
+              </div>
+              <div class="chat-message">
+                <p>Hello World !</p>
+              </div>
+              <div class="chat-message">
+                <p>Hello World !</p>
+              </div>
+              <div class="chat-message">
+                <p>Hello World !</p>
+              </div>
+            </div>
+      
+            <div class="chat-item chat-other">
+              <div class="chat-message">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard
+                  dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                  make a type specimen
+                  book.</p>
+              </div>
+            </div>
+            <div class="chat-item chat-me">
+              <div class="chat-message">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+              </div>
+              <div class="chat-message">
+                <p>Hello World !</p>
+              </div>
+              <div class="chat-message">
+                <p>Hello World !</p>
+              </div>
+              <div class="chat-message">
+                <p>Hello World !</p>
+              </div>
+            </div>
+            <div class="chat-item chat-other">
+              <div class="chat-message">
+                <p>Hello World !</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chat-footer">
+          <div class="chat-form">
+            <form>
+              <div class="chat-form-inner">
+                <div class="file-button">
+                  <input name="file" type="file" multiple="">
+                  <i class="far fa-camera-alt"></i>
+                </div>
+                <div class="chat-form-content">
+                  <textarea placeholder="Write a message..."></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div> 
+</div>
+
+
+
+
+</div>
+
+<script src="./assets/js/app.min.js"></script>
+<script src="./assets/js/laravel-pro.js"></script>
+
+</body>
+
+</html>

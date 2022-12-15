@@ -1,0 +1,1993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRM - ScopeLinks</title> 
+  <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+  <meta content="Coderthemes" name="author" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- App favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.png">
+  <!-- Import Font Google -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+  <!-- Import Style File -->
+  <link rel="stylesheet" href="./assets/css/app.min.css"> 
+ 
+</head>
+
+<body class="default-page"> 
+  <div class="wrapper">
+
+    <!-- Start Preloader -->
+    <div id="sl-preloader-page" class="sl-preloader-page">
+      <div class="sl-preloader-wrap">
+        <div class="sl-circle">
+          <div class="sl-circle1 sl-child"></div>
+          <div class="sl-circle2 sl-child"></div>
+          <div class="sl-circle3 sl-child"></div>
+          <div class="sl-circle4 sl-child"></div>
+          <div class="sl-circle5 sl-child"></div>
+          <div class="sl-circle6 sl-child"></div>
+          <div class="sl-circle7 sl-child"></div>
+          <div class="sl-circle8 sl-child"></div>
+          <div class="sl-circle9 sl-child"></div>
+          <div class="sl-circle10 sl-child"></div>
+          <div class="sl-circle11 sl-child"></div>
+          <div class="sl-circle12 sl-child"></div>
+        </div>
+        <div class="sl-preloader-title">Loading ...</div>
+      </div>
+    </div>
+    <!-- End Preloader -->
+
+<!-- Start Main Content -->
+<main id="main-content" class="main-content default-page">
+  <div class="content-wapper">
+    <!-- Sidebar Start -->
+    <aside id="sl-main-sidebar" class="sl-main-sidebar">
+      <div class="sl-main-sidebar__container">
+        <!-- Sidebar Top -->
+        <div class="sl-sidebar__top">
+          <a class="sl-sidebar__logo" href="./dashboard.html">
+            <div class="logo-icon">
+              <img src="./assets/images/favicon.svg" alt="Logo icon">
+            </div>
+            <div class="logo-text">
+              <span class="app-name">Scopelinks</span>
+            </div>
+          </a>
+          <div class="sl-sidebar__actions">
+            <button class="sl-icon dropdown sl-sidebar__dropdown-setting">
+              <div class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown">
+                <i class="far fa-cog"></i>
+              </div>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu__container">
+                  <div class="dropdown-item__title">Sidebar settings</div>
+                  <a class="dropdown-item" href="#"><i class="fal fa-download"></i> Show archived</a>
+                  <a class="dropdown-item" href="#"><i class="fal fa-chevron-down"></i>Expand all Folders</a>
+                  <a class="dropdown-item" href="#"><i class="fal fa-columns"></i>Layout size & style</a>
+                  <div class="dropdown-item item-dark-mode"><i class="fal fa-moon"></i>Dark side(bar)
+                    <span class="custom-control custom-switch stopPropagation">
+                      <input type="checkbox" class="custom-control-input" id="switchDarkSiderbar">
+                      <label class="custom-control-label" for="switchDarkSiderbar"></label>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </button>
+            <button id="sl-sidebar__collapse" class="sl-icon sl-sidebar__collapse">
+              <i class="far fa-chevron-double-left"></i>
+            </button>
+            <button id="sidebar-mobile-close" class="sl-icon sl-sidebar__close-mobail">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Sidebar Body -->
+        <div class="sl-sidebar__body">
+          <div class="sl-sidebar__body-top">
+            <!-- <div class="sl-sidebar__search">
+              <div class="sl-search__layout">
+                <div class="sl-search__inner">
+                  <i class="far fa-search"></i>
+                  <input type="search" placeholder="Search">
+                </div>
+              </div>
+              <div class="sl-search__btn"><i class="far fa-bolt"></i></div>
+            </div> -->
+            <div class="sl-sidebar__quick-links">
+              <ul>
+                <li class="sl-quick-links__item">
+                  <a href="./dashboard.html" data-toggle="tooltip-collapes" title="Dashboard">
+                    <div class="sl-quick-links__item-icon">
+                      <i class="far fa-home"></i>
+                    </div>
+                    <span class="sl-quick-links__item-label">Dashboard</span>
+                  </a>
+                </li>
+                <li class="sl-quick-links__item">
+                  <a href="./notifications.html" data-toggle="tooltip-collapes" title="Notifications">
+                    <div class="sl-quick-links__item-icon">
+                      <i class="far fa-bell"></i>
+                    </div>
+                    <span class="sl-quick-links__item-label">Notifications</span>
+                  </a>
+                </li>
+                <li class="sl-quick-links__item">
+                  <a href="./favorites.html" data-toggle="tooltip-collapes" title="Favorites">
+                    <div class="sl-quick-links__item-icon">
+                      <i class="far fa-star"></i>
+                    </div>
+                    <span class="sl-quick-links__item-label">Favorites</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <nav class="sl-sidebar__navbar sl-scrollbar">
+              <ul>
+                <li class="sl-navbar__item">
+                  <a href="#">
+                    <div class="sl-navbar__item-icon">
+                      <i class="far fa-users"></i>
+                    </div>
+                    <span class="sl-navbar__item-label">Leads</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="./leads.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-users"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">All Leads</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./create-lead.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-plus"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Add Lead</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./edit-lead.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-edit"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Edit Lead</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sl-navbar__item">
+                  <a href="#">
+                    <div class="sl-navbar__item-icon">
+                      <i class="far fa-users"></i>
+                    </div>
+                    <span class="sl-navbar__item-label">Customers</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="./customers.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-users"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">All Customers</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./create-customer.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-plus"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Add Customer</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./edit-customer.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-edit"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Edit Customer</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sl-navbar__item">
+                  <a href="#">
+                    <div class="sl-navbar__item-icon">
+                      <i class="far fa-users"></i>
+                    </div>
+                    <span class="sl-navbar__item-label">Companies</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="./companies.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-users"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">All Companies</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./create-company.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-plus"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Add Company</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./edit-company.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-edit"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Edit Company</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sl-navbar__item">
+                  <a href="#">
+                    <div class="sl-navbar__item-icon">
+                      <i class="far fa-shopping-cart"></i>
+                    </div>
+                    <span class="sl-navbar__item-label">Products</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="./create-product.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-plus"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Add Product</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./edit-product.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-edit"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Edit Product</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./create-product-category.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-plus"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Add Category</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sl-navbar__item">
+                  <a href="#">
+                    <div class="sl-navbar__item-icon">
+                      <i class="far fa-shopping-cart"></i>
+                    </div>
+                    <span class="sl-navbar__item-label">Orders</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="./create-order.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-plus"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Add Order</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./edit-order.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-edit"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Edit Order</span>
+                      </a>
+                    </li> 
+                    <li>
+                      <a href="./review-order.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-eye"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Review Order</span>
+                      </a>
+                    </li>
+
+                  </ul>
+                </li>
+                <li class="sl-navbar__item">
+                  <a href="#">
+                    <div class="sl-navbar__item-icon">
+                      <i class="far fa-tree-palm"></i>
+                    </div>
+                    <span class="sl-navbar__item-label">Tours</span>
+                  </a>
+                  <ul> 
+                    <li>
+                      <a href="./create-reservation.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-hand-pointer"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Create Reservation</span>
+                      </a>
+                    </li><li>
+                      <a href="./create-vendor.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-user"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Create Vender</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./create-hotel.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-hotel"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Create Hotel</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sl-navbar__item">
+                  <a href="#">
+                    <div class="sl-navbar__item-icon">
+                      <i class="far fa-shopping-cart"></i>
+                    </div>
+                    <span class="sl-navbar__item-label">Delivery Orders</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="./orders.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-shopping-cart"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">All Orders</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./create-delivery-order.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-plus"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Create Delivery Order</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./order-detail.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-plus"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Order Detail</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./order-operation.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-plus"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Order Operation</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./pickup-operation.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-plus"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Pickup Operation</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sl-navbar__item">
+                  <a href="#">
+                    <div class="sl-navbar__item-icon">
+                      <i class="far fa-box-open"></i>
+                    </div>
+                    <span class="sl-navbar__item-label">Projects</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="./projects.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-box-open"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">All Projects</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./create-project.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-box-open"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Create Project</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./tasks.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-edit"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Tasks</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sl-navbar__item">
+                  <a href="#">
+                    <div class="sl-navbar__item-icon">
+                      <i class="far fa-envelope"></i>
+                    </div>
+                    <span class="sl-navbar__item-label">Messages</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="./messages-inbox.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-inbox"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Inbox</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./messages-read.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-eye"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Read Message</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sl-navbar__item">
+                  <a href="#">
+                    <div class="sl-navbar__item-icon">
+                      <i class="far fa-box-usd"></i>
+                    </div>
+                    <span class="sl-navbar__item-label">Accounts</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="./wallet-management.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-wallet"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Wallet Management</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sl-navbar__item">
+                  <a href="#">
+                    <div class="sl-navbar__item-icon">
+                      <i class="far fa-box-open"></i>
+                    </div>
+                    <span class="sl-navbar__item-label">Components</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="./spinners.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="fad fa-spinner-third"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Spinners</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./toasts.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-window-alt"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Toasts</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./form.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-edit"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Form</span>
+                      </a>
+                    </li>
+                    <li><a href="./list-empty.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-edit"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">List Empty</span>
+                      </a></li>
+                  </ul>
+                </li>
+                <li class="sl-navbar__item">
+                  <a href="./widget.html">
+                    <div class="sl-navbar__item-icon">
+                      <i class="far fa-box-open"></i>
+                    </div>
+                    <span class="sl-navbar__item-label">Widget</span>
+                  </a> 
+                </li>
+                <li class="sl-navbar__item">
+                  <a href="#">
+                    <div class="sl-navbar__item-icon">
+                      <i class="far fa-users"></i>
+                    </div>
+                    <span class="sl-navbar__item-label">Users</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="./users.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-users"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">All Users</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./create-user.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-users"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Add User</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./edit-user.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-users"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Edit User</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./permission.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-users"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Permission</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./department.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-users"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Department</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./user-tags.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-users"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Tags</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sl-navbar__item">
+                  <a href="#">
+                    <div class="sl-navbar__item-icon">
+                      <i class="far fa-cog"></i>
+                    </div>
+                    <span class="sl-navbar__item-label">System</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="./translation.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-users"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Languages</span>
+                      </a>
+                    </li> 
+                    <li>
+                      <a href="./locations.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-users"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Locations</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./modules.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-users"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Modules</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./plugins.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-users"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Plugins</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./system-notes.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-sticky-note"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Notes</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./settings.html">
+                        <div class="sl-navbar__item-icon">
+                          <i class="far fa-users"></i>
+                        </div>
+                        <span class="sl-navbar__item-label">Settings</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="sl-sidebar__body-bottom">
+            <div class="sl-sidebar__quick-links">
+              <ul>
+                <li class="sl-quick-links__item">
+                  <a href="#" data-toggle="tooltip-collapes" title="Documentation">
+                    <div class="sl-quick-links__item-icon">
+                      <i class="far fa-file-alt"></i>
+                    </div>
+                    <span class="sl-quick-links__item-label">Documentation</span>
+                  </a>
+                </li>
+                <li class="sl-quick-links__item">
+                  <a href="#" data-toggle="tooltip-collapes" title="Goals">
+                    <div class="sl-quick-links__item-icon">
+                      <i class="far fa-trophy-alt"></i>
+                    </div>
+                    <span class="sl-quick-links__item-label">Goals</span>
+                  </a>
+                </li>
+                <li class="sl-quick-links__item dropdown sl-resource-menu">
+                  <a href="#" class="dropdown-toggle" id="dropdownResource2" data-toggle="dropdown"
+                    data-toggle="tooltip-collapes" title="Help">
+                    <div class="sl-quick-links__item-icon">
+                      <i class="fas fa-question"></i>
+                    </div>
+                    <span class="sl-quick-links__item-label">Help</span>
+                  </a>
+                  <div class="dropdown-menu sl-resource-menu__dropdown" aria-labelledby="dropdownResource2">
+                    <div class="dropdown-menu__container">
+                      <div class="sl-resource-menu__header">
+                        <div class="sl-resource-menu__header-top">
+                          <div class="logo"><img src="./assets/images/logo-light.svg" alt="Logo text"
+                              class="logo light">
+                          </div>
+                          <a href="javascript:void(0);" class="sl-resource-menu__close sl-dropdown-close"><i
+                              class="fas fa-times"></i></a>
+                        </div>
+                        <div class="sl-resource-menu__header-bottom">
+                          <h3 class="title h1">Hi Ahmed! <img src="./assets/images/favicon.svg" alt="Logo icon">
+                          </h3>
+                          <p>Let's make the world more productive!</p>
+                        </div>
+                      </div>
+                      <div class="sl-resource-menu__body">
+                        <div class="sl-resource-menu__card card-tooles">
+                          <h4 class="sl-resource-menu__card-title">Resource Center</h4>
+                          <p class="sl-resource-menu__card-desc">Get started with these tools below or see <a
+                              href="#">what's
+                              new</a></p>
+                          <div class="sl-resource-menu__card-items">
+                            <div class="sl-resource-menu__card-item">
+                              <a href="#">
+                                <i class="fal fa-graduation-cap"></i>
+                                <span class="title">Onboarding</span>
+                              </a>
+                            </div>
+                            <div class="sl-resource-menu__card-item">
+                              <a href="#">
+                                <i class="fab fa-youtube"></i>
+                                <span class="title">Videos</span>
+                              </a>
+                            </div>
+                            <div class="sl-resource-menu__card-item">
+                              <a href="#">
+                                <i class="fal fa-book"></i>
+                                <span class="title">Docs/FAQ</span>
+                              </a>
+                            </div>
+                            <div class="sl-resource-menu__card-item">
+                              <a href="#">
+                                <i class="fal fa-columns"></i>
+                                <span class="title">Templates</span>
+                              </a>
+                            </div>
+                            <div class="sl-resource-menu__card-item">
+                              <a href="#">
+                                <i class="fal fa-window-alt"></i>
+                                <span class="title">webinar</span>
+                              </a>
+                            </div>
+                            <div class="sl-resource-menu__card-item">
+                              <a href="#">
+                                <i class="fal fa-id-card-alt"></i>
+                                <span class="title">Demo</span>
+                              </a>
+                            </div>
+                            <div class="sl-resource-menu__card-item">
+                              <a href="#">
+                                <i class="fal fa-users"></i>
+                                <span class="title">Community</span>
+                              </a>
+                            </div>
+                          </div>
+                          <h4 class="sl-resource-menu__card-title">Support</h4>
+                          <div class="sl-resource-menu__card-items">
+                            <div class="sl-resource-menu__card-item">
+                              <a href="#">
+                                <i class="fal fa-comments-alt"></i>
+                                <span class="title">Connect with Scopelinks</span>
+                              </a>
+                            </div>
+                            <div class="sl-resource-menu__card-item">
+                              <a href="#">
+                                <i class="far fa-lightbulb-on"></i>
+                                <span class="title">Request a Feature</span>
+                              </a>
+                            </div>
+                            <div class="sl-resource-menu__card-item">
+                              <a href="#">
+                                <i class="fal fa-bug"></i>
+                                <span class="title">Submit a Bug</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sl-resource-menu__card card-help">
+                          <h4 class="sl-resource-menu__card-title"><a href="#">Still need help? <i
+                                class="far fa-chevron-right"></i></a>
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="sl-quick-links__item">
+                  <a href="#">
+                    <div class="sl-quick-links__item-icon">
+                      <i class="far fa-star"></i>
+                    </div>
+                    <span class="sl-quick-links__item-label">Favorites</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar Bottom -->
+        <div class="sl-sidebar__bottom">
+          <div class="dropdown sl-user-setting-menu">
+            <div class="dropdown-toggle" id="dropUpSettingUsers" data-toggle="dropdown">
+              <span class="sl-avatar sl-user-setting__avatar-team" style="background-color: blueviolet;">A</span>
+              <span class="sl-avatar sl-user-setting__avatar-user sl-avatar_online"
+                style="background-color: rgb(168, 109, 31);">Aa</span>
+            </div>
+            <div class="dropdown-menu sl-user-setting-menu_dropdown" aria-labelledby="dropUpSettingUsers">
+              <div class="dropdown-menu__container">
+                <div class="sl-user-settings-menu__top"></div>
+                <a href="javascript:void(0);" class="sl-user-settings-menu__close sl-dropdown-close"><i
+                    class="fal fa-times"></i></a>
+                <div class="sl-user-settings-menu__body">
+                  <div class="sl-user-settings-menu__body-workspaces">
+                    <div class="sl-user-settings-menu__workspaces-item active">
+                      <span class="sl-avatar" style="background-color: blueviolet;">a</span>
+                    </div>
+                    <div class="sl-user-settings-menu__workspaces-item">
+                      <span class="sl-avatar" style="background-color: rgb(168, 109, 31);">a</span>
+                    </div>
+                    <div class="sl-user-settings-menu__workspaces-add">
+                      <span class="workspaces-add-btn">
+                        <i class="fal fa-plus"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="sl-user-settings-menu__body-column">
+                    <div class="sl-user-settings-menu__body-head">
+                      <div>
+                        <span class="sl-avatar" style="background-color:blueviolet">a</span>
+                      </div>
+                      <span class="sl-username"><a href="#">ahmed ali's Workspace</a></span>
+                    </div>
+                    <div class="sl-user-settings-menu__body-column-links">
+                      <ul>
+                        <li class="sl-user-settings-menu__body-column-item"><a
+                            class="sl-user-settings-menu__body-column-link" href="./settings.html">Settings</a></li>
+                        <li class="sl-user-settings-menu__body-column-item"><a
+                            class="sl-user-settings-menu__body-column-link" href="#">Import/Export</a></li>
+                        <li class="sl-user-settings-menu__body-column-item"><a
+                            class="sl-user-settings-menu__body-column-link" href="#">People</a> <a href="#"
+                            class="add-new"><i class="fas fa-user-plus"></i>Invite</a></li>
+                        <li class="sl-user-settings-menu__body-column-item"><a
+                            class="sl-user-settings-menu__body-column-link" href="#">ClickApps</a></li>
+                        <li class="sl-user-settings-menu__body-column-item"><a
+                            class="sl-user-settings-menu__body-column-link" href="#">Spaces</a></li>
+                        <li class="sl-user-settings-menu__body-column-item"><a
+                            class="sl-user-settings-menu__body-column-link" href="#">Integrations</a></li>
+                        <li class="sl-user-settings-menu__body-column-item"><a
+                            class="sl-user-settings-menu__body-column-link" href="#">Template
+                            Center <span class="sl-user-settings-menu-__body-column-link-badge">New</span></a></li>
+                        <li class="sl-user-settings-menu__body-column-item"><a
+                            class="sl-user-settings-menu__body-column-link" href="#">Trash</a></li>
+                        <li class="sl-user-settings-menu__body-column-item"><a
+                            class="sl-user-settings-menu__body-column-link link-block" href="#">Upgrade</a></li>
+                        <li class="sl-user-settings-menu__body-column-item"><a
+                            class="sl-user-settings-menu__body-column-link" href="#">Security & Permissions</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sl-user-settings-menu__body-column">
+                    <div class="sl-user-settings-menu__body-head">
+                      <div>
+                        <span class="sl-avatar sl-avatar_online" style="background-color: rgb(168, 109, 31);">aa</span>
+                      </div>
+                      <span class="sl-username"><a href="#">ahmed ali</a></span>
+                    </div>
+                    <div class="sl-user-settings-menu__body-column-links">
+                      <ul>
+                        <li class="sl-user-settings-menu__body-column-item"><a
+                            class="sl-user-settings-menu__body-column-link" href="./profile.html">My Settings</a>
+                        </li>
+                        <li class="sl-user-settings-menu__body-column-item"><a
+                            class="sl-user-settings-menu__body-column-link" href="#">Notifications</a></li>
+                        <li class="sl-user-settings-menu__body-column-item"><a
+                            class="sl-user-settings-menu__body-column-link" href="#">Apps</a></li>
+                        <li class="sl-user-settings-menu__body-column-item"><a
+                            class="sl-user-settings-menu__body-column-link" href="#">Rewards</a></li>
+                        <li class="sl-user-settings-menu__body-column-item"><a
+                            class="sl-user-settings-menu__body-column-link" href="./signin.html">Log out</a></li>
+                        <li class="item-hr"></li>
+                        <li class="sl-user-settings-menu__body-column-item"><a
+                            class="sl-user-settings-menu__body-column-link" href="#">Help</a></li>
+                        <li class="sl-user-settings-menu__body-column-item"><a
+                            class="sl-user-settings-menu__body-column-link" href="#">Hotkeys</a></li>
+                        <li class="sl-user-settings-menu__body-column-item justify-content-between">
+                          <a class="sl-user-settings-menu__body-column-link" href="#">Dark Mode</a>
+                          <span class="custom-control custom-switch stopPropagation">
+                            <input type="checkbox" class="custom-control-input" id="dark-theme-toggle">
+                            <label class="custom-control-label" for="dark-theme-toggle"></label>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="sl-user-settings-menu__bottom">
+                  <div class="sl-user-settings-menu-v2__body-apps">
+                    <div class="apps__title"><a href="#">Download Apps: </a></div>
+                    <div class="apps-items">
+                      <a href="#"><i class="fab fa-apple"></i></a>
+                      <a href="#"><i class="fab fa-android"></i></a>
+                      <a href="#"><i class="fas fa-desktop"></i></a>
+                      <a href="#"><i class="fab fa-chrome"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown sl-resource-menu">
+            <div class="dropdown-toggle" id="dropdownResource" data-toggle="dropdown">
+              <i class="far fa-question-circle"></i>
+            </div>
+            <div class="dropdown-menu sl-resource-menu__dropdown " aria-labelledby="dropdownResource">
+              <div class="dropdown-menu__container sl-scrollbar">
+                <div class="sl-resource-menu__header">
+                  <div class="sl-resource-menu__header-top">
+                    <div class="logo"><img src="./assets/images/logo-light.svg" alt="Logo text" class="logo light">
+                    </div>
+                    <a href="javascript:void(0);" class="sl-resource-menu__close sl-dropdown-close"><i
+                        class="fas fa-times"></i></a>
+                  </div>
+                  <div class="sl-resource-menu__header-bottom">
+                    <h3 class="title h1">Hi Ahmed! <img src="./assets/images/favicon.svg" alt="Logo icon">
+                    </h3>
+                    <p>Let's make the world more productive!</p>
+                  </div>
+                </div>
+                <div class="sl-resource-menu__body">
+                  <div class="sl-resource-menu__card card-tooles">
+                    <h4 class="sl-resource-menu__card-title">Resource Center</h4>
+                    <p class="sl-resource-menu__card-desc">Get started with these tools below or see <a href="#">what's
+                        new</a></p>
+                    <div class="sl-resource-menu__card-items">
+                      <div class="sl-resource-menu__card-item">
+                        <a href="#">
+                          <i class="fal fa-graduation-cap"></i>
+                          <span class="title">Onboarding</span>
+                        </a>
+                      </div>
+                      <div class="sl-resource-menu__card-item">
+                        <a href="#">
+                          <i class="fab fa-youtube"></i>
+                          <span class="title">Videos</span>
+                        </a>
+                      </div>
+                      <div class="sl-resource-menu__card-item">
+                        <a href="#">
+                          <i class="fal fa-book"></i>
+                          <span class="title">Docs/FAQ</span>
+                        </a>
+                      </div>
+                      <div class="sl-resource-menu__card-item">
+                        <a href="#">
+                          <i class="fal fa-columns"></i>
+                          <span class="title">Templates</span>
+                        </a>
+                      </div>
+                      <div class="sl-resource-menu__card-item">
+                        <a href="#">
+                          <i class="fal fa-window-alt"></i>
+                          <span class="title">webinar</span>
+                        </a>
+                      </div>
+                      <div class="sl-resource-menu__card-item">
+                        <a href="#">
+                          <i class="fal fa-id-card-alt"></i>
+                          <span class="title">Demo</span>
+                        </a>
+                      </div>
+                      <div class="sl-resource-menu__card-item">
+                        <a href="#">
+                          <i class="fal fa-users"></i>
+                          <span class="title">Community</span>
+                        </a>
+                      </div>
+                    </div>
+                    <h4 class="sl-resource-menu__card-title">Support</h4>
+                    <div class="sl-resource-menu__card-items">
+                      <div class="sl-resource-menu__card-item">
+                        <a href="#">
+                          <i class="fal fa-comments-alt"></i>
+                          <span class="title">Connect with Scopelinks</span>
+                        </a>
+                      </div>
+                      <div class="sl-resource-menu__card-item">
+                        <a href="#">
+                          <i class="far fa-lightbulb-on"></i>
+                          <span class="title">Request a Feature</span>
+                        </a>
+                      </div>
+                      <div class="sl-resource-menu__card-item">
+                        <a href="#">
+                          <i class="fal fa-bug"></i>
+                          <span class="title">Submit a Bug</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sl-resource-menu__card card-help">
+                    <h4 class="sl-resource-menu__card-title"><a href="#">Still need help? <i
+                          class="far fa-chevron-right"></i></a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- Sidebar End --> <!-- Start Topbar -->
+<header id="main-topbar" class="main-topbar">
+  <div class="topbar-wrapper">
+    <div class="topbar__left">
+      <span class="app-name">Scopelinks</span>
+      <ul class="list-unstyled topnav-menu m-0">
+        <li>
+          <div id="sl-search-form-ad" class="sl-search-form input-group">
+            <div class="input-group-prepend">
+              <button>
+                <div class="far fa-search"></div>
+              </button>
+            </div>
+            <input type="search" class="form-control" placeholder="Search or need help" />
+            <div class="sl-search-form__dropdown">
+              <div class="sl-search-form__dropdown-container">
+                <h6 class="dropdown-header">Users</h6>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <span class="sl-avatar"><img src="./assets/images/user.jpg" alt="user"></span><span
+                          class="hilight">Mo</span>hamed Shaarawy
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <span class="sl-avatar"><img src="./assets/images/user.jpg" alt="user"></span><span
+                          class="hilight">Mo</span>hamed Shaarawy
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <span class="sl-avatar"><img src="./assets/images/user.jpg" alt="user"></span><span
+                          class="hilight">Mo</span>hamed Shaarawy
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <h6 class="dropdown-header">Leads</h6>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <i class="fad fa-folder-open"></i>
+                        <span class="hilight">Mo</span>hamed Shaarawy
+                      </div>
+                      <div class="right">
+                        <span class="sub">16</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <h6 class="dropdown-header">Leads</h6>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="left">
+                        <img src="./assets/images/user.jpg" alt="user">
+                        <span class="hilight">Mo</span>hamed Shaarawy
+                      </div>
+                      <div class="right">
+                        <span class="sub">16</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="javascript:void(0);" class="sidebar-mobile-open" id="sidebar-mobile-open">
+            <i class="fa fa-bars"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="topbar__right">
+      <div class="sl-balance d-none d-lg-inline-block">
+        <i class="fas fa-sack-dollar"></i>
+        <span class="count-down"><i class="far fa-minus"></i>1550 EGP</span>
+      </div>
+      <div class="sl-balance d-none d-lg-inline-block">
+        <i class="fas fa-sack-dollar"></i>
+        <span class="count-up"><i class="far fa-plus"></i>1550 EGP</span>
+      </div>
+      <ul class="list-unstyled topnav-menu m-0">
+        <li class="d-none d-lg-inline-block">
+          <a class="nav-link arrow-none" data-toggle="fullscreen" href="#">
+            <i class="fas fa-expand"></i>
+          </a>
+        </li>
+        <li class="dropdown messages-list topbar-dropdown">
+          <a class="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#" role="button"
+            aria-haspopup="false" aria-expanded="false">
+            <i class="fas fa-envelope"></i>
+            <span class="badge badge-primary rounded-circle noti-icon-badge"></span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+            <div class="dropdown-menu__container">
+              <!-- item-->
+              <div class="dropdown-item messages-title  d-flex justify-content-between">
+                <h5 class="m-0">Messages </h5>
+                <a href="" class="text-dark">
+                  <small>Clear All</small>
+                </a>
+              </div>
+
+              <div class="messages-scroll" data-simplebar>
+                <!-- item-->
+                <a href="javascript:void(0);" class="active dropdown-item message-item">
+                  <div class="message-icon">
+                    <img src="./assets/images/jenny.jpg" class="img-fluid rounded-circle" alt="image" />
+                  </div>
+                  <h6 class="message-title">Hi, How are you? What about our next meeting</h6>
+                  <div class="message-details"> <span class="message-date">May 8, 2021 </span></div>
+                  <p class="user-msg">
+                    <small>Hi, How are you? What about our next meeting</small>
+                  </p>
+                </a>
+                <!-- item-->
+                <a href="javascript:void(0);" class="active dropdown-item message-item">
+                  <div class="message-icon">
+                    <img src="./assets/images/jenny.jpg" class="img-fluid rounded-circle" alt="image" />
+                  </div>
+                  <h6 class="message-title">Hi, How are you? What about our next meeting</h6>
+                  <div class="message-details"> <span class="message-date">May 8, 2021
+                    </span></div>
+                  <p class="user-msg">
+                    <small>Hi, How are you? What about our next meeting</small>
+                  </p>
+                </a>
+
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item message-item">
+                  <div class="message-icon">
+                    <img src="./assets/images/jenny.jpg" class="img-fluid rounded-circle" alt="image" />
+                  </div>
+                  <h6 class="message-title">Hi, How are you? What about our next meeting</h6>
+                  <div class="message-details"><span class="message-date">May 8, 2021
+                    </span></div>
+                  <p class="user-msg">
+                    <small>Hi, How are you? What about our next meeting</small>
+                  </p>
+                </a>
+
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item message-item">
+                  <div class="message-icon">
+                    <img src="./assets/images/jenny.jpg" class="img-fluid rounded-circle" alt="image" />
+                  </div>
+                  <h6 class="message-title">Hi, How are you? What about our next meeting</h6>
+                  <div class="message-details"><span class="message-date">May 8, 2021
+                    </span></div>
+                  <p class="user-msg">
+                    <small>Hi, How are you? What about our next meeting</small>
+                  </p>
+                </a>
+                <!-- item-->
+                <a href="javascript:void(0);" class="dropdown-item message-item">
+                  <div class="message-icon">
+                    <img src="./assets/images/jenny.jpg" class="img-fluid rounded-circle" alt="image" />
+                  </div>
+                  <h6 class="message-title">Hi, How are you? What about our next meeting</h6>
+                  <div class="message-details"><span class="message-date">May 8, 2021
+                    </span></div>
+                  <p class="user-msg">
+                    <small>Hi, How are you? What about our next meeting</small>
+                  </p>
+                </a>
+              </div>
+
+              <!-- All-->
+              <a href="javascript:void(0);" class="dropdown-item text-center message-item message-all">
+                View all
+                <i class="fe-arrow-right"></i>
+              </a>
+
+            </div>
+
+          </div>
+        </li>
+        <li class="dropdown icons-list topbar-dropdown">
+          <a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" href="#">
+            <i class="fas fa-th-large"></i>
+          </a>
+          <div class="dropdown-menu dropdown-lg dropdown-menu-right">
+            <div class="dropdown-menu__container p-lg-1">
+              <div class="row no-gutters">
+                <div class="col">
+                  <a class="dropdown-icon-item" href="./reminders.html">
+                    <i class="fas fa-clock"></i>
+                    <span>Reminders</span>
+                  </a>
+                </div>
+                <div class="col">
+                  <a class="dropdown-icon-item" href="./notes.html">
+                    <i class="fas fas fa-edit"></i>
+                    <span>Notes</span>
+                  </a>
+                </div>
+                <div class="col">
+                  <a class="dropdown-icon-item" href="./todos.html">
+                    <i class="fas fa-address-book"></i>
+                    <span>Todo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="notification-list topbar-dropdown">
+          <a class="nav-link 
+            sl-sidebar-float_open" href="#" data-open-sidebar-float="sl-notification-sidebar">
+            <i class="fas fa-bell"></i>
+            <span class="badge badge-primary rounded-circle noti-icon-badge"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<!-- End Topbar -->
+
+
+<!-- Start Notification Sidebar -->
+<div id="sl-notification-sidebar" class="sl-sidebar-float sidebar-right sl-notification-sidebar">
+  <div class="sl-sidebar-float__container">
+    <button class="sl-sidebar-float_close"><i class="fal fa-times"></i></button>
+    <div class="sl-notification-sidebar__header">
+      <div class="left">
+        <h3 class="title">Notification</h3>
+        <span class="desc">All notification details is here.</span>
+      </div>
+      <div class="right"><a href="#" class="notification-clear">Clear all notification</a></div>
+    </div>
+    <div class="sl-notification-sidebar__inner">
+      <div class="sl-not-notification d-none">
+        <div class="sl-notifiy-icon ">
+          <span>No notifications</span>
+          <i class="far fa-bell"></i>
+        </div>
+        <div class="notifications-footer text-center">
+          <button class="sl-btn sl-btn-grey sl-btn-outline sl-btn-sm">Notification Center</button>
+        </div>
+      </div>
+      <div class="sl-scrollbar">
+        <div class="notifications-list-sidebar">
+          <ul>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifiy">
+              <div class="notifiy-wrap">
+                <div class="notifiy-icon">
+                  <i class="far fa-comments-alt"></i>
+                </div>
+                <div class="notifiy-container">
+                  <h5 class="notifiy-title">Select the package type to ensure the right vehicle is selected for pickup.
+                  </h5>
+                  <span class="notifiy-date">12/03/2021 at 02:39:44 AM</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="notifications-footer text-center pt-4">
+          <button class="sl-btn sl-btn-grey sl-btn-outline sl-btn-sm">Notification Center</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Start Notification Sidebar -->
+    <!-- Start Content -->
+    <div class="content-page">
+
+      <div class="content">
+        <div class="card-box">
+          <div class="">
+            <form>
+              <div class="sl-form__field sl-form__row">
+                <label class="sl-form__label">To </label>
+                <div class="sl-form__input">
+                  <input type="text" class="form-control" placeholder="To">
+                </div>
+              </div>
+              <div class="sl-form__field sl-form__row">
+                <label class="sl-form__label">Subject </label>
+                <div class="sl-form__input">
+                  <input type="text" class="form-control" placeholder="Subject">
+                </div>
+              </div>
+              <div class="sl-form__field sl-form__row sl-form__counter">
+                <label class="sl-form__label">Message </label>
+                <div class="sl-form__input">
+                  <textarea class="form-control" placeholder="ex: Near Macdonalds, Al Ahly Bank"
+                    maxlength="500"></textarea>
+                </div>
+              </div>
+              <div class="text-right">
+                <button class="sl-btn sl-btn-grey mr-2"><i class="far fa-save m-0"></i></button>
+                <button class="sl-btn sl-btn-grey mr-2"><i class="far fa-trash-alt"></i></button>
+                <button class="sl-btn sl-btn-primary">Send<i class="far fa-paper-plane ml-2"></i> </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Start Footer -->
+      <footer id="main-footer" class="main-footer">
+        <div class="container-fluid">
+          <div class="coypright text-center">
+            CRM v2 <a href="#">Scopelinks</a>
+            <script>
+              document.write(new Date().getFullYear())
+            </script> @All Rights Reserved
+          </div>
+        </div>
+      </footer>
+      <!-- End  Footer -->
+    </div>
+    <!-- End Content -->
+  </div>
+</main>
+<!-- End Main Content -->
+
+<div class="sl-quicklinks-float-menu">
+  <div class="dropup">
+    <button class="dropdown-toggle" type="button" id="dropdownMenuquicklinks-float" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">
+      <i class="fas fa-th-large"></i>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuquicklinks-float">
+      <div class="dropdown-menu__container">
+        <a href="javascript:void(0);" class="dropdown-item">
+          <i class="far fa-user"></i>
+          <span>My Account</span>
+        </a>
+        <a href="javascript:void(0);" class="dropdown-item">
+          <i class="far fa-user"></i>
+          <span>My Account</span>
+        </a>
+        <a href="javascript:void(0);" class="dropdown-item">
+          <i class="far fa-user"></i>
+          <span>My Account</span>
+        </a>
+        <a href="javascript:void(0);" class="dropdown-item">
+          <i class="far fa-user"></i>
+          <span>My Account</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="chat-box-float" class="chat-box-float">
+  <button id="chat-box-icon" class="chat-box-icon">
+    <i class="far fa-comments"></i>
+  </button>
+  <div id="chat-box" class="chat-box">
+    <div class="chat-box-wrap">
+      <div class="chat-users">
+        <div class="chat-box-header">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="chat-tab" data-toggle="tab" href="#chat"><i
+                  class="far fa-comments"></i>Chat</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="users-tab" data-toggle="tab" href="#users"><i class="far fa-user"></i>Users</a>
+            </li>
+          </ul>
+  
+        </div>
+        <div class="chat-box-body">
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="chat" role="tabpanel" aria-labelledby="chat-tab">
+              <div class="chat-list">
+                <ul class="sl-scrollbar">
+                  <li class="chat-message-item">
+                    <div class="chat-message-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="message-info">
+                        <div class="message-info-user">
+                          <strong>Ahmed Ali</strong>
+                          <span class="message-date">Today at 12:32:13 pm</span>
+                        </div>
+                        <div class="message-content">
+                          Hello World !
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-message-item">
+                    <div class="chat-message-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="message-info">
+                        <div class="message-info-user">
+                          <strong>Ahmed Ali</strong>
+                          <span class="message-date">Today at 12:32:13 pm</span>
+                        </div>
+                        <div class="message-content">
+                          Hello World !
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-message-item">
+                    <div class="chat-message-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="message-info">
+                        <div class="message-info-user">
+                          <strong>Ahmed Ali</strong>
+                          <span class="message-date">Today at 12:32:13 pm</span>
+                        </div>
+                        <div class="message-content">
+                          Hello World !
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-message-item">
+                    <div class="chat-message-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="message-info">
+                        <div class="message-info-user">
+                          <strong>Ahmed Ali</strong>
+                          <span class="message-date">Today at 12:32:13 pm</span>
+                        </div>
+                        <div class="message-content">
+                          Hello World !
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-message-item">
+                    <div class="chat-message-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="message-info">
+                        <div class="message-info-user">
+                          <strong>Ahmed Ali</strong>
+                          <span class="message-date">Today at 12:32:13 pm</span>
+                        </div>
+                        <div class="message-content">
+                          Hello World !
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-message-item">
+                    <div class="chat-message-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="message-info">
+                        <div class="message-info-user">
+                          <strong>Ahmed Ali</strong>
+                          <span class="message-date">Today at 12:32:13 pm</span>
+                        </div>
+                        <div class="message-content">
+                          Hello World !
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-message-item">
+                    <div class="chat-message-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="message-info">
+                        <div class="message-info-user">
+                          <strong>Ahmed Ali</strong>
+                          <span class="message-date">Today at 12:32:13 pm</span>
+                        </div>
+                        <div class="message-content">
+                          Hello World !
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-message-item">
+                    <div class="chat-message-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="message-info">
+                        <div class="message-info-user">
+                          <strong>Ahmed Ali</strong>
+                          <span class="message-date">Today at 12:32:13 pm</span>
+                        </div>
+                        <div class="message-content">
+                          Hello World !
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="users" role="tabpanel" aria-labelledby="users-tab">
+              <div class="chat-list">
+                <ul class="sl-scrollbar">
+                  <li class="chat-user-item">
+                    <div class="chat-user-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="user-info">
+                        <div class="user-info-name">
+                          <strong>Ahmed Ali</strong>
+                        </div>
+                        <div class="user-info-position">
+                          <small>Front End Developer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-user-item">
+                    <div class="chat-user-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar"> <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="user-info">
+                        <div class="user-info-name">
+                          <strong>Ahmed Ali</strong>
+                        </div>
+                        <div class="user-info-position">
+                          <small>Front End Developer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-user-item">
+                    <div class="chat-user-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="user-info">
+                        <div class="user-info-name">
+                          <strong>Ahmed Ali</strong>
+                        </div>
+                        <div class="user-info-position">
+                          <small>Front End Developer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-user-item">
+                    <div class="chat-user-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="user-info">
+                        <div class="user-info-name">
+                          <strong>Ahmed Ali</strong>
+                        </div>
+                        <div class="user-info-position">
+                          <small>Front End Developer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-user-item">
+                    <div class="chat-user-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="user-info">
+                        <div class="user-info-name">
+                          <strong>Ahmed Ali</strong>
+                        </div>
+                        <div class="user-info-position">
+                          <small>Front End Developer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-user-item">
+                    <div class="chat-user-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="user-info">
+                        <div class="user-info-name">
+                          <strong>Ahmed Ali</strong>
+                        </div>
+                        <div class="user-info-position">
+                          <small>Front End Developer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-user-item">
+                    <div class="chat-user-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="user-info">
+                        <div class="user-info-name">
+                          <strong>Ahmed Ali</strong>
+                        </div>
+                        <div class="user-info-position">
+                          <small>Front End Developer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-user-item">
+                    <div class="chat-user-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="user-info">
+                        <div class="user-info-name">
+                          <strong>Ahmed Ali</strong>
+                        </div>
+                        <div class="user-info-position">
+                          <small>Front End Developer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="chat-user-item">
+                    <div class="chat-user-item-wrap">
+                      <div class="user-avater">
+                        <span class="sl-avatar">
+                          <img src="./assets/images/user.jpg" alt="user"></span>
+                        </span>
+                      </div>
+                      <div class="user-info">
+                        <div class="user-info-name">
+                          <strong>Ahmed Ali</strong>
+                        </div>
+                        <div class="user-info-position">
+                          <small>Front End Developer</small>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chat-content">
+        <div class="chat-header">
+          <button id="back-to-chat-tabs" class="back-to-chat-tabs"><i class="far fa-angle-left"></i></button>
+          <div class="chat-title">Samer Mostafa</div>
+        </div>
+        <div class="chat-body sl-scrollbar">
+          <div class="chat-subject">Subject: Hello World!</div>
+          <div class="chat-messages">
+            <div class="chat-item chat-me">
+              <div class="chat-message">
+                <p>Hello World !</p>
+              </div>
+              <div class="chat-message">
+                <p>Hello World !</p>
+              </div>
+              <div class="chat-message">
+                <p>Hello World !</p>
+              </div>
+              <div class="chat-message">
+                <p>Hello World !</p>
+              </div>
+            </div>
+      
+            <div class="chat-item chat-other">
+              <div class="chat-message">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard
+                  dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                  make a type specimen
+                  book.</p>
+              </div>
+            </div>
+            <div class="chat-item chat-me">
+              <div class="chat-message">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+              </div>
+              <div class="chat-message">
+                <p>Hello World !</p>
+              </div>
+              <div class="chat-message">
+                <p>Hello World !</p>
+              </div>
+              <div class="chat-message">
+                <p>Hello World !</p>
+              </div>
+            </div>
+            <div class="chat-item chat-other">
+              <div class="chat-message">
+                <p>Hello World !</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chat-footer">
+          <div class="chat-form">
+            <form>
+              <div class="chat-form-inner">
+                <div class="file-button">
+                  <input name="file" type="file" multiple="">
+                  <i class="far fa-camera-alt"></i>
+                </div>
+                <div class="chat-form-content">
+                  <textarea placeholder="Write a message..."></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div> 
+</div>
+
+
+
+
+</div>
+
+<script src="./assets/js/app.min.js"></script>
+<script src="./assets/js/laravel-pro.js"></script>
+
+</body>
+
+</html>
